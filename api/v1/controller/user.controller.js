@@ -15,7 +15,7 @@ module.exports.register = async (req, res) => {
     if(existEmail) {
         res.json({
             code: 400,
-            message: "Email đã tồn tại!"
+            message: "Email không tồn tại!"
         });
         return
     }
